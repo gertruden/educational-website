@@ -1,9 +1,39 @@
-*{
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+  padding-left: 100px;
+  padding-right: 100px;
+  background: #F5F5F5;
+
+}
+.active-link {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0 100px;
+}
+.active-link a {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  color: #6C60E0;
+  }
+
+ .active-link a::after {
+  content:'#';
+  position:;
+  background: #9179F5;
+}
+
+
+/* *{
 margin: 0;
 
 
-}
-.container {
+}*/
+/*.container {
 border: 6px solid white;
 font-size: 1.5rem;
 padding:1rem;
@@ -11,25 +41,24 @@ padding:1rem;
   display: flex;
   flex: 1
   /* flex-grow: */
+/*} */
 
-}
-.container1 {
+/* .container1 {
       font-size: 1.5rem;
       padding:1rem;
       flex-grow: 3;
       flex:3 3;
       background-color: white;
-      height: auto;
+      height: auto; */
       /* padding: 0 100px; */
-      display: flex;
+      /* display: flex;
       flex-direction: row;
       align-items: center;
       justify-content: space-around;
       border-radius: 8px;
-      box-shadow: 2px 2px 5px rgb(177, 177,177,177);
-      transition: 0.3s ease-in-out;
+      transition: 0.3s ease-in-out;*/
 }
-
+/*
 .container2 {
     padding: 20px 20px;
     flex-shrink: 4;
@@ -44,50 +73,57 @@ min-width: 100%;
 header {
 min-width:  100vw;
 background-color:  transparent;
-}
-header nav {
+}*/
+/* header nav {
 display:  flex;
 align-items: center;
 justify-content: space-around;
 padding: 0 100px;
-}
+}*/
 .logo {
 display: flex;
-align-items: center;
-justify-content: flex-start;
+flex-direction: column;
+/* align-items: center; */
+justify-content: flex-start
 
 }
+
 span {
     color: purple;
 }
-.logo-img {
+/*.logo-img {
 height: 90px;
-}
+}*/
+
 nav ul {
-list-style-type: none;
+/* list-style-type: none; */
+display: flex;
 }
 nav ul li {
     display: inline-block;
+    justify-content: center;
     margin: 0 15px;
     }
-    nav ul li a {
+    /* nav ul li a {
     text-decoration: none;
-    color:--------;
+    color: black;
     font-weight: 600;
     font-size: 18px;
     transition: 0.4s ease-in-out;
     }
     nav ul li a:hover {
-    color: black;
+    color: black; */
 }
+
 .btn {
-    background-color: darkcyan;
+    background-color: green;
     padding: 10px 25px;
     border-radius: 30px;
-    color: white;
+    color: black;
     transition: 0.4s ease-in-out;
-    text-decoration: none;
+    text-decoration: none
 }
+/*
 .btn:hover {
     color: aquamarine;
 }
@@ -124,16 +160,16 @@ nav ul li {
 .video {
   display: flex;
   padding: 20px 20px;
-}
+} */
 
 
 /* stylig feature boxes and section */
 
-.feature {
+/* .feature {
     background-color: white;
-    height: 50vh;
+    height: 50vh; */
     /* padding: 0 100px; padding of every section will be the same as much as needed */
-    display: flex;
+    /* display: flex;
     align-items: center;
     justify-content: space-around;
 
@@ -156,20 +192,20 @@ nav ul li {
     color: rgb(49,48,48);
     margin: 5px 0;
 
-}
+} */
 
 
 /* styling online course section */
 
-.online-courses {
+/* .online-courses {
     background-color: white;
-    height: auto;
+    height: auto; */
     /* padding: 0 100px; */
-    display: flex;
+    /* display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-around; */
 }
-.online-courses img {
+/* .online-courses img {
     width: 250px;
     border-radius: 80px;
     margin-bottom: 15px;
@@ -178,15 +214,15 @@ nav ul li {
 .online-box {
     background-color: white;
     /* padding: 20px 20px; */
-    display: flex;
+    /*display: flex;
     flex-direction: column;
     align-items: flex-start;
-    justify-content: space-between;
-    border-radius: 8px;
+    justify-content: space-between; */
+    /* border-radius: 8px; */
     /* box-shadow: 2px 2px 5px rgb(177, 177,177,177);
-    transition: 0.3s ease-in-out; */
+    transition: 0.3s ease-in-out; */ */
 }
-.online-box:hover {
+/*.online-box:hover {
     box-shadow: 0px 5px 15px #bdbdbd;
     cursor: pointer;
 }
@@ -251,16 +287,16 @@ nav ul li {
 
 .hire {
   padding: 5px 15px;
-}
+} */
 
-nav img {
+/* nav img {
     width: 100px;
     padding: 5px;
     margin: auto 7px;
-    cursor: pointer;}
+    cursor: pointer;} */
 
-nav video {
+/*nav video {
         width: 34px;
         padding: 5px;
         margin: auto 7px;
-        cursor: pointer;}
+        cursor: pointer;} */
