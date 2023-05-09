@@ -24,13 +24,13 @@ a:active {
   flex-direction: row;
   padding: 0 16px;
   justify-content: space-between;
-  align-items:flex-start;
+  align-items:baseline;
 }
 .logo {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: center;
+  align-items: baseline;
 
 }
 span {
@@ -66,7 +66,6 @@ span {
 .navigation--link-active {
    color:  #9179f5;
 }
-
 .navigation--link-active::after {
   content:"";
   position: absolute;
@@ -78,23 +77,23 @@ span {
   background: #9179f5;
 }
 
-  .button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 140px;
-    height: 50px;
-    color: #9179F5           ;
-    font-size: 16px;
-    font-weight: 400;
-    border-radius: 25px;
-    margin-left: 80px;
-    cursor: pointer;
-    margin-top: 10px;
-    background: #FFFFFF;
-    border: 1.5px solid #9179F5;
-    box-shadow: 0px 5px 60px 5px rgba(145, 121, 245, 0.15);
-    position: relative;
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 140px;
+  height: 50px;
+  color: #9179F5           ;
+  font-size: 16px;
+  font-weight: 400;
+  border-radius: 25px;
+  margin-left: 80px;
+  cursor: pointer;
+  margin-top: 10px;
+  background: #FFFFFF;
+  border: 1.5px solid #9179F5;
+  box-shadow: 0px 5px 60px 5px rgba(145, 121, 245, 0.15);
+  position: relative;
 
   }
 ul {
