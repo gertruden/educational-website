@@ -4,9 +4,9 @@ body {
   margin: 0;
   padding: 0px 100px;
   background: #ffffff;
-  width: 100vw;
-  height: 100vh;
-  box-sizing: border-box;
+  /* width: 100vw;
+  height: 100vh; */
+  /* box-sizing: border-box; */
   font-family: 'Poppins';
 }
 
@@ -22,16 +22,24 @@ a:active {
 .navigation {
   display: flex;
   flex-direction: row;
-  padding: 20px 16px;
+  padding-top: 20px;
   justify-content: space-between;
   align-items:center;
 }
 .logo {
   display: flex;
   flex-direction: row;
-  /* justify-content: space-between; */
+  justify-content: space-between;
   align-items: center;
+  padding-right: 15px;
 
+}
+.edulearn {
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 36px;
 }
 span {
   color:  #9179f5;
@@ -39,12 +47,12 @@ span {
 .navigation--links {
   display: flex;
   flex-direction: row;
-  /* width: 400px;
-  height:50px; */
+  width: 400px;
+  height:50px;
   list-style: none;
   justify-content: space-around;
-  margin-left: 100px;
-  margin-right: 100px;
+  margin-left: 200px;
+  margin-right:200px;
   align-items: center;
 
 }
@@ -78,11 +86,18 @@ span {
   border-radius: 50%;
   background: #9179f5;
 }
+.navigation--link-item {
+  padding: 0 25px;
+}
 
 .button {
   display: flex;
   align-items: center;
   justify-content: center;
+  font-family: 'Poppins';
+  font-style: normal;
+  line-height: 18px;
+  color: #9179F5;
   width: 140px;
   height: 40px;
   color: #9179F5           ;
@@ -95,20 +110,20 @@ span {
   background: #FFFFFF;
   border: 1.5px solid #9179F5;
   box-shadow: 0px 5px 60px 5px rgba(145, 121, 245, 0.15);
-
-
+  text-decoration: none;
   }
-ul {
+
+/* ul {
   flex-grow: 1;
-}
+} */
 
 .hero-section {
     margin: 0;
 }
-.hero-box {
+.hero-box1 {
     display: flex;
     /* align-items: flex-start; */
-    justify-content:space-between;
+    justify-content: space-between;
     padding: 40px 0px;
 
 }
@@ -120,6 +135,12 @@ ul {
 }
 .learn {
   padding-bottom: 20px;
+  font-family: 'Poppins';
+font-style: normal;
+font-weight: 600;
+font-size: 64px;
+line-height: 80px;
+color: #171B26;
 }
 .enroll {
     background: #6C60E0;
@@ -139,7 +160,67 @@ ul {
     margin-bottom: 30px;
     border-left: 2px solid #646879;
     padding-left: 10px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 34px;
+    color: #646879;
 }
+.video {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  /* justify-content: space-between; */
+  padding-right: 80px;
+  align-items: center;
+  align-content: space-between;
+}
+.video-img {
+  width: 60px;
+  height: 60px;
+  border-radius: 60px;
+  margin-left: 20px;
+
+  /* background: url(.jpg); */
+  box-shadow: 0px 5px 40px 5px rgba(108, 96, 224, 0.15);
+}
+.play-button {
+  width: 20px;
+  height: 20px;
+  border-radius: 20px;
+background: #FFFFFF;
+box-shadow: 0px 4px 40px 5px rgba(0, 0, 0, 0.15);
+}
+.play-button2 {
+  width: 8px;
+height: 8px;
+background: #6C60E0;
+border-radius: 0.4px;
+transform: rotate(90deg);
+}
+.video img:nth-child(2){
+  z-index: 1;
+}
+.video img:nth-child(3){
+  z-index: 2;
+}
+
+.watch-para {
+
+  width: 71px;
+  height: 32px;
+  margin-left: 25px;
+  align-items: center;
+  font-family: 'Helvetica';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  color: #171B26;
+}
+
+
 .expert-mentors {
   background: #FFFFFF;
   box-shadow: 0px 4px 60px 5px rgba(109, 97, 224, 0.1);
@@ -152,22 +233,20 @@ ul {
   display: flex;
 }
 .right-box {
+  position: absolute;
+width: 656.95px;
+height: 644.99px;
+left: 754px;
+top: 105px;
   background: url(Untitled-1000.png);
 }
-.video {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  padding-right: 80px;
-  align-items: center;
-  align-content: space-between;
-}
-.watch-para {
 
-  align-items: center;
-  font-family: 'Helvetica';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 16px;
+.header-img {
+  /* border-radius: 200px; */
+  width: 528px;
+  height: 528px;
+  /* left: 913px;
+   top: 203px; */
+
+background: url(Untitled-1000.png);
 }
