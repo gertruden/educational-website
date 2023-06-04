@@ -149,6 +149,8 @@ color: #171B26;
 .enroll {
     background: #6C60E0;
     border-radius: 30px;
+    width: 200px;
+    height: 60px;
     text-decoration: none;
     font-family: 'Helvetica';
     font-style: normal;
@@ -256,8 +258,8 @@ top: 105px;
   /* border-radius: 200px; */
   width: 528px;
   height: 528px;
-  /* left: 913px;
-   top: 203px; */
+  left: 872px;
+   top: 203px;
 background: url(Untitled-1000.png);
 }
 
@@ -270,7 +272,7 @@ background: url(Untitled-1000.png);
 }
 .header-img::before {
       content: '';
-      position: absolute;
+      position: relative;
       left: -50px;
       top: 50px;
       width: 18px;
@@ -282,9 +284,9 @@ background: url(Untitled-1000.png);
     }
 .header-img::before {
       content: '';
-      position: absolute;
-      /* left: -50px;
-      top: 90px; */
+      position: relative;
+      /left: -50px;
+      top: 90px;
       width: 15px;
       height: 15px;
       left: 892px;
@@ -297,7 +299,7 @@ background: url(Untitled-1000.png);
     }
 .header-img::before {
       content: '';
-      /* position: absolute; */
+      position: relative;
       background-image: url('assets/teaching.png');
       left: -80px;
       top: 50px;
@@ -326,6 +328,96 @@ background: url(Untitled-1000.png);
           width: 18px;
           height: 18px;
         }
+.circle {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  border-radius: 20px;
+  left: 1195px;
+  top: 200px;
+  background: #9179F5;
+}
+
+.square {
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 215px;
+  height: 60px;
+  left: -70px;
+  top: -350px;
+  background: #FFFFFF;
+  box-shadow: 0px 4px 60px 5px rgba(109, 97, 224, 0.1);
+  border-radius: 30px
+}
+.teacher {
+  background: #3CC1FE;
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+}
+.hundred h1{
+width: 47px;
+height: 26px;
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 20px;
+line-height: 26px;
+/* identical to box height, or 130% */
+color: #646879;
+}
+.hundred p{
+  width: 103px;
+  height: 18px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  /* identical to box height, or 129% */
+  color: #646879;
+}
+.square2 {
+  display: flex;
+  position: relative;
+  width: 136px;
+  height: 60px;
+  left: 350px;
+  top: -100px;
+  background: #FFFFFF;
+  box-shadow: 0px 4px 60px 5px rgba(109, 97, 224, 0.2);
+  border-radius: 6px;
+  padding: 2px;
+  }
+.teacher2 {
+  width: 44px;
+  height: 44px;
+  border-radius: 44px;
+    background: pink;
+
+}
+.teacher2 h1{
+  width: 33px;
+height: 26px;
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 20px;
+line-height: 26px;
+color: #646879;
+}
+.teacher2 p{
+  width: 58px;
+height: 18px;
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 18px;
+color: #646879;
+}
+
 .hero-box2 {
   /* display: flex;
   flex-direction: row;
@@ -335,18 +427,43 @@ background: url(Untitled-1000.png);
 .boxes {
   /* width: 112.95px;
   height: 30px; */
-
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
 
 }
-.boxes h2 {
+.trusted {
   position: absolute;
   width: 329px;
   height: 76px;
   left: 100px;
   top: 808px;
-  font-weight: bold;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 38px;
+  color: rgba(23, 27, 38, 0.7);
+}
+
+.imagesites {
+  width: 75.97px;
+  height: 30px;
+  align-items: center;
+}
+
+.hero-box3 {
+  display: flex;
+margin-top: 123px;
+}
+.online-box {
+  display: flex;
+}
+.platform {
+  border-right: 10px;
+  padding-right: 58px;
+}
+.online {
+
 }
