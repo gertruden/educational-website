@@ -14,6 +14,7 @@
     <meta http-equiv="refresh" content="30" />
     <meta name="robots" content="noindex" />
     <link rel="stylesheet" href="educational.css" />
+    <link rel="stylesheet" href="queries.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
@@ -31,10 +32,18 @@
         <li class="navigation--link-item"><a hef= "#" class = "navigation--link">Blog</a></li>
       </ul>
         <a href="#" class="button">Register</a>
+        <img src="assets/menu-btn.png" alt=""class="menu-btn">
     </nav>
+    <script>
+      const menuBtn = document.querySelector('.menu-btn')
+      const navlinks = document.querySelector('.navigation--links')
+      menuBtn.addEventListener('Click',()=>{
+        navlinks.classList.toggle('mobile-menu')
+      })
+    </script>
       <section class="hero-section">
-        <div class="hero-box1">
-            <div class="left-box">
+        <div class="row hero-box1">
+            <div class="col left-box">
                 <h1 class="learn">Let's Learn new <br>Courses & Gain <br> more skills</h1>
                 <p class="left-para">A learning platform based on practical knowledge with <br> best and world class mentors.</p>
               <div class="video">
@@ -44,43 +53,41 @@
                 <p class="watch-para">watch our <br> story</p>
               </div>
             </div>
-            <div class="right-box">
-              <div class="background">
-                <img src="assets/Ellipse.png" alt="">
-              </div>
-              <div class="header-img" >
-              <img  src="assets\Untitled.png" alt="header images">
-              </div>
-
-              <img src="assets/Group 5.png" alt="" class="green">
-              <img src="assets/teaching.png" alt="" class="teaching">
-              <div class="square">
-                <div class="teacher">
-                  <img src="assets/mentor.png">
+            <div class="col right-box">
+                <div class="background">
+                  <img src="assets/Ellipse.png" alt="">
                 </div>
-                <div class="hundred">
-                  <h1>100+</h1>
-                  <p>Expert Mentors</p>
+                <div class="header-img" >
+                <img  src="assets\Untitled.png" alt="header images">
                 </div>
-              </div>
-              <div class="square2">
-                <div class="teacher2">
-                  <img class="" src="assets/online-course.png">
+                <img src="assets/Group 5.png" alt="" class="green">
+                <img src="assets/teaching.png" alt="" class="teaching">
+                <div class="square">
+                  <div class="teacher">
+                    <img src="assets/mentor.png">
+                  </div>
+                  <div class="hundred">
+                    <h1>100+</h1>
+                    <p>Expert Mentors</p>
+                  </div>
                 </div>
-                <div class="hundred">
-                  <h1>1k+</h1>
-                  <p>Courses</p>
+                <div class="square2">
+                  <div class="teacher2">
+                    <img class="" src="assets/online-course.png">
+                  </div>
+                  <div class="hundred">
+                    <h1>1k+</h1>
+                    <p>Courses</p>
+                  </div>
                 </div>
-              </div>
-              <div class="circle">
-              </div>
-              <div class="circle2">
-              </div>
-              <div class="square3">
-              </div>
-              <div class="triangle">
-              </div>
-
+                <div class="circle">
+                </div>
+                <div class="circle2">
+                </div>
+                <div class="square3">
+                </div>
+                <div class="triangle">
+                </div>
             </div>
         </div>
         <div class="hero-box2">

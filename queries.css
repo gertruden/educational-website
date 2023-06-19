@@ -1,0 +1,9 @@
+@media (max-width: 84em) {
+  ..hero-section {
+    max-width: 120rem;
+  }
+  .learn {
+    font-size: 4.4rem;
+  }
+
+}
