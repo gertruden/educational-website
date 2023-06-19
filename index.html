@@ -32,10 +32,12 @@
         <li class="navigation--link-item"><a hef= "#" class = "navigation--link">Blog</a></li>
       </ul>
         <a href="#" class="button">Register</a>
-        <img src="assets/menu-btn.png" alt=""class="menu-btn">
+        <button class="menu-button">
+          <div class="menu-icon"></div>
+        </button>
     </nav>
     <script>
-      const menuBtn = document.querySelector('.menu-btn')
+      const menuBtn = document.querySelector('.menu-button')
       const navlinks = document.querySelector('.navigation--links')
       menuBtn.addEventListener('Click',()=>{
         navlinks.classList.toggle('mobile-menu')
