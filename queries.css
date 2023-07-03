@@ -24,10 +24,7 @@
   .navigation--link-item {
     margin: 3rem auto;
   }
-.row {
-  flex-direction: column;
-}
-
+  
 .hero-box1 {
   grid-template-columns: repeat(1,1fr);
 }
@@ -62,7 +59,7 @@ width: 10rem;
   }
 
 .grid--3-cols {
-  grid-template-columns: repeat(2,1fr);
+  grid-template-columns: repeat(1,1fr);
 }
 
 }
