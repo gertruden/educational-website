@@ -49,6 +49,10 @@ width: 10rem;
   left: 10%;
 }
 
+.right-box {
+  width: 50%;
+}
+
 }
 @media (max-width: 70em) {
   .hero-section {
