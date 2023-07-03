@@ -1,27 +1,73 @@
-@media (max-width: 84em) {
-  ..hero-section {
+@media only screen and (max-width:900px) {
+  .navigation {
+    padding: 0;
+  }
+  .logo {
+    top: 3rem;
+    left: 3rem;
+  }
+  .navigation--links {
+    flex-direction: column;
+    width: 50%;
+    height: 50vh;
+    justify-content: center;
+    background: #9179f5;
+    margin-top: -90rem;
+    transition: all 0.5s ease;
+
+  }
+  .menu-button {
+    display: block;
+    margin-top: 0;
+    border-bottom-right-radius: 30%;
+  }
+  .navigation--link-item {
+    margin: 3rem auto;
+  }
+.row {
+  flex-direction: column;
+}
+
+.hero-box1 {
+  grid-template-columns: repeat(1,1fr);
+}
+
+.grid--3-cols {
+  grid-template-columns: repeat(1,1fr);
+}
+
+.logos {
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.imagesites {
+display: block;
+align-items: center;
+width: 10rem;
+}
+
+.comment {
+  top: 25%;
+  left: 10%;
+}
+
+}
+@media (max-width: 70em) {
+  .hero-section {
     max-width: 120rem;
   }
   .learn {
     font-size: 4.4rem;
   }
 
+.grid--3-cols {
+  grid-template-columns: repeat(2,1fr);
+}
+
 }
 
 @media (max-width: 600px) {
-
-
-@keyframes showMenu {
-  0% {
-    transform: scaleY(0);
-  }
-  80% {
-    transform: scaleY(1.2);
-  }
-  100% {
-    transform: scaleY(1);
-  }
-}
 
 .navigation ul {
   list-style-type: none;
@@ -48,5 +94,5 @@
  .navigation a:focus {
    transform: scale(1.2);
    transition: all 0.3s;
- }
+ } 
 }

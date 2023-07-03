@@ -2,7 +2,6 @@
 <html lang="en" dir="ltr">
   <head>
     <title>Educational website</title>
-    <style></style>
     <meta charset="utf-8" />
     <meta
       name="description"
@@ -13,17 +12,25 @@
     <meta name="viewport" content="width-device-width, initial-scale=1.0" />
     <meta http-equiv="refresh" content="30" />
     <meta name="robots" content="noindex" />
-    <link rel="stylesheet" href="educational.css" />
+    <link rel="stylesheet" href="style.css"/>
     <link rel="stylesheet" href="queries.css">
+    <link rel="stylesheet" href="educational.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&family=Poppins&display=swap" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="queries.css"> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
   </head>
   <body>
-    <nav class = "navigation">
-      <div class = "logo"><img src = "assets\books.jpg" alt="" style="width:50px; padding-right: 15px;">
+    <header class="header">
+      <div class = "logo">
+        <img src = "assets\books.jpg" class="logo-img" alt="logo image" >
         <h1 class="edulearn"><span>Edu</span>Learn</h1>
       </div>
+      <nav class = "navigation">
       <ul class = "navigation--links">
         <li class="navigation--link-item"><a hef= "#" class = "navigation--link navigation--link-active">Home</a></li>
         <li class="navigation--link-item"><a hef= "#" class = "navigation--link">Course</a></li>
@@ -31,94 +38,86 @@
         <li class="navigation--link-item"><a hef= "#" class = "navigation--link">Pricing</a></li>
         <li class="navigation--link-item"><a hef= "#" class = "navigation--link">Blog</a></li>
       </ul>
-        <a href="#" class="button">Register</a>
-        <button class="menu-button">
-          <div class="menu-icon"></div>
-        </button>
-    </nav>
-    <script>
-      const menuBtn = document.querySelector('.menu-button')
-      const navlinks = document.querySelector('.navigation--links')
-      menuBtn.addEventListener('Click',()=>{
-        navlinks.classList.toggle('mobile-menu')
-      })
-    </script>
+    </nav>  
+    <div class="register">
+      <a href="#" class="button btn--register">Register</a>
+    </div>
+    <div class="menu-button">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 icon menu-button">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+      </svg>
+      </div>
+  
+    </header>
       <section class="hero-section">
-        <div class="row hero-box1">
-            <div class="col left-box">
-                <h1 class="learn">Let's Learn new <br>Courses & Gain <br> more skills</h1>
-                <p class="left-para">A learning platform based on practical knowledge with <br> best and world class mentors.</p>
-              <div class="video">
-                <a href="#" class="button enroll">Enroll now</a>
-                <img class="video-img"src="assets\my-passport-photo.png" alt="image 1">
-                <img class="play-button" src="assets\play-button.png" alt="image 2">
-                <p class="watch-para">watch our <br> story</p>
+        <div class="hero-box1">
+          <div class="col left-box">
+            <h1 class="learn">Let's Learn new Courses & Gain more skills</h1>
+            <p class="left-para">A learning platform based on practical knowledge with <br> best and world class mentors.</p>
+            <div class="video">
+              <a href="#" class="button btn--enroll">Enroll now</a>
+              <img class="video-img"src="assets\my-passport-photo.png" alt="image 1">
+              <img class="play-button" src="assets\play-button.png" alt="image 2">
+              <p class="watch-para">watch our <br> story</p>
+            </div>
+          </div>
+          <div class="col right-box">
+            <img src="assets/Ellipse.png" class="background" alt="">
+            <img  src="assets\Untitled.png" class="header-img" alt="header images">
+            <img src="assets/Group 5.png" alt="" class="green-book">
+            <img src="assets/teaching.png" alt="" class="teaching">
+            <div class="square">
+              <div class="teacher">
+                <img src="assets/mentor.png">
+              </div>
+              <div class="hundred">
+                <h1>100+</h1>
+                <p>Expert Mentors</p>
               </div>
             </div>
-            <div class="col right-box">
-                <div class="background">
-                  <img src="assets/Ellipse.png" alt="">
-                </div>
-                <div class="header-img" >
-                <img  src="assets\Untitled.png" alt="header images">
-                </div>
-                <img src="assets/Group 5.png" alt="" class="green">
-                <img src="assets/teaching.png" alt="" class="teaching">
-                <div class="square">
-                  <div class="teacher">
-                    <img src="assets/mentor.png">
-                  </div>
-                  <div class="hundred">
-                    <h1>100+</h1>
-                    <p>Expert Mentors</p>
-                  </div>
-                </div>
-                <div class="square2">
-                  <div class="teacher2">
-                    <img class="" src="assets/online-course.png">
-                  </div>
-                  <div class="hundred">
-                    <h1>1k+</h1>
-                    <p>Courses</p>
-                  </div>
-                </div>
-                <div class="circle">
-                </div>
-                <div class="circle2">
-                </div>
-                <div class="square3">
-                </div>
-                <div class="triangle">
-                </div>
+            <div class="square2">
+              <div class="teacher2">
+                <img class="" src="assets/online-course.png">
+              </div>
+              <div class="hundred">
+                <h1>1k+</h1>
+                <p>Courses</p>
+              </div>
+            </div>
+            <div class="circle">
+            </div>
+            <div class="circle2">
+            </div>
+            <div class="square3">
+            </div>
+            <div class="triangle">
+            </div>
             </div>
         </div>
-        <div class="hero-box2">
-          <div class="boxes">
-            <h2 class="Trusted">Trusted By Top 100+ <br> companies & Universities</h2>
-            <p class="imagesites google"><span class="g">G</span><span class="o">o</span><span class="oo">o</span><span class="g">g</span><span class="l">l</span><span class="o">e</span></p>
-            <!-- <img class="imagesites" src="assets\google.png"> -->
-            <img class="imagesites" src="assets\udemy.png">
-            <img class="imagesites" src="assets\slack.png">
-            <img class="imagesites" src="assets\havard-university.png" alt="book image">
-            <img class="imagesites" src="assets\skillshare.png">
-          </div>
+      </section>
+
+      <section class="imagesites--section">
+        <div class="container logos">
+          <h2 class="Trusted imagesites">Trusted By Top 100+ companies & Universities</h2>
+          <p class="google imagesites"><span class="g">G</span><span class="o">o</span><span class="oo">o</span><span class="g">g</span><span class="l">l</span><span class="o">e</span></p>
+          <img class="imagesites" src="assets\udemy.png">
+          <img class="imagesites" src="assets\slack.png">
+          <img  src="assets\havard-university.png" class="imagesites" alt="book image">
+          <img  src="assets\skillshare.png" class="imagesites">  
         </div>
-        <div class="hero-box3">
+      </section>
+      <section class="learning-platform">
+        <div class="container grid grid--3-cols">
           <div class="inside-box1">
-            <div class="man-pointing">
-                <img src="assets/Mask Group.png" alt="" class="">
+            <div class="men">
+                <img src="assets/Mask Group.png" alt="" class="man-pointing">
                 <div class="comment">
                   <div class="pointer">
                   </div>
                   <div class="inside-comment">
                     <h3>Joseph Ukara</h3>
                     <p>Soo Expert & Mentor</p>
-                    <div class="stars">
-                      <img src="assets/star.png" alt="">
-                      <img src="assets/star.png" alt="">
-                      <img src="assets/star.png" alt="">
-                      <img src="assets/star.png" alt="">
-                      <img src="assets/star.png" alt="">
+                    <div class="stars">⭐⭐⭐⭐⭐
                     </div>
                   </div>
                 </div>
@@ -128,8 +127,8 @@
             </div>
           </div>
           <div class="platform">
-              <h2>Why We Are The <br> Best E-learning <br> Platform</h2>
-              <p>As we have 100% success rate we <br> can proudly say we are the best.</p>
+              <h2>Why We Are The Best E-learning Platform</h2>
+              <p>As we have 100% success rate we can proudly say we are the best.</p>
           </div>
           <div class="online-box">
             <div class="inside-box2">
@@ -160,7 +159,9 @@
                 </div>
             </div>
           </div>
+
         </div>
-    </section>
+      </section> 
+
   </body>
 </html>
