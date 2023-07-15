@@ -17,10 +17,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter&family=Poppins&display=swap" rel="stylesheet">
-    <!-- <link rel="stylesheet" href="queries.css"> -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 
   </head>
   <body>
@@ -41,12 +42,8 @@
     <div class="register">
       <a href="#" class="button btn--register">Register</a>
     </div>
-    <div class="menu-button">
-      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 icon menu-button">
-        <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-      </svg>
-      </div>
-  
+    <button class="btn-mobile-nav"><ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+      <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon></button>
     </header>
       <section class="hero-section">
         <div class="hero-box1">
@@ -83,8 +80,7 @@
                 <p>Courses</p>
               </div>
             </div>
-            <div class="circle">
-            </div>
+            <div class="circle"></div>
             <div class="circle2">
             </div>
             <div class="square3">
@@ -96,13 +92,15 @@
       </section>
 
       <section class="imagesites--section">
-        <div class="container logos">
-          <h2 class="Trusted imagesites">Trusted By Top 100+ companies & Universities</h2>
-          <p class="google imagesites"><span class="g">G</span><span class="o">o</span><span class="oo">o</span><span class="g">g</span><span class="l">l</span><span class="o">e</span></p>
+        <div class="container trusties">
+          <h2 class="Trusted">Trusted By Top 100+ companies & Universities</h2>
+          <div class="logos">
+            <p class="google imagesites"><span class="g">G</span><span class="o">o</span><span class="oo">o</span><span class="g">g</span><span class="l">l</span><span class="o">e</span></p>
           <img class="imagesites" src="assets\udemy.png">
           <img class="imagesites" src="assets\slack.png">
           <img  src="assets\havard-university.png" class="imagesites" alt="book image">
           <img  src="assets\skillshare.png" class="imagesites">  
+          </div>
         </div>
       </section>
       <section class="learning-platform">
@@ -118,6 +116,7 @@
                     <p>Soo Expert & Mentor</p>
                     <div class="stars">⭐⭐⭐⭐⭐
                     </div>
+                    <div class="star">⭐⭐⭐</div>
                   </div>
                 </div>
             </div>
