@@ -143,8 +143,6 @@
   }
 .hero-box1 {
   padding: 2rem 0.9rem;
-  /* padding-left: 0.9rem;
-  padding-right: 0.9rem; */
 }
   .grid--3-cols {
     grid-template-columns: repeat(1,1fr);
@@ -154,6 +152,10 @@
   width: 100%;
   padding: 0;
   margin: 0 1.5rem;
+}
+
+.play-button {
+  left: 50%;
 }
 
 .inside-box1 {
@@ -179,9 +181,9 @@
   left: 22%;
 }
 .inside-comment {
-width: 5rem;
-height: 2.2rem;
-line-height: 0.5;
+width: 8rem;
+height: 3.5em;
+line-height: 1;
 padding-left: 0.75rem;
 
 }
@@ -238,6 +240,7 @@ color: rgba(23, 27, 38, 0.7);
   .online-box {
   margin-left: 0;
   padding-left: 0;
+  line-height: 1;
    }
 
    .open, .open2, .open3 {
@@ -249,13 +252,13 @@ color: rgba(23, 27, 38, 0.7);
     }
     
     .cirriculum h2 {
-    width: 5.85rem;
+    width: 90%;
     height: 1rem;
     font-size: 0.7rem;
     }
     
     .cirriculum p {
-    width: 15.4rem;
+    width: 90%;
     height: 1.6rem;
     font-size: 0.5rem;
     }
