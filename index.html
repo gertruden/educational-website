@@ -2,7 +2,6 @@
 <html lang="en" dir="ltr">
   <head>
     <title>Educational website</title>
-    <style></style>
     <meta charset="utf-8" />
     <meta
       name="description"
@@ -13,124 +12,154 @@
     <meta name="viewport" content="width-device-width, initial-scale=1.0" />
     <meta http-equiv="refresh" content="30" />
     <meta name="robots" content="noindex" />
-    <link rel="stylesheet" href="educational.css" />
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="queries.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&family=Poppins&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
   </head>
   <body>
-    <!-- <div class="container">
-      <header class="container1">
-        <div class="top-header">
-          <header> -->
-    <!-- <nav class = "navigation">
-            <div class = "logo"><img src = "assets\books.jpg" alt="" style="width:50px;">
-              <h1><span>Edu</span>Learn</h1> </div>
-            <ul class = "navigation--links">
-              <li class="navigation--link-item"><a hef= "#" class = "navigation--link navigation--link-active">Home</a></li>
-              <li class="navigation--link-item"><a hef= "#" class = "navigation--link">Course</a></li>
-              <li class="navigation--link-item"><a hef= "#" class = "navigation--link">Mentor</a></li>
-              <li class="navigation--link-item"><a hef= "#" class = "navigation--link">Pricing</a></li>
-              <li class="navigation--link-item"><a hef= "#" class = "navigation--link">Blog</a></li>
-              <li class="navigation--link-item"><a hef= "#" class = "navigation--link">Gertrude</a></li>
-              <li class="navigation--link-item"><a hef= "#" class = "navigation--link">Daniel</a></li>
-            </ul>
-              <a href="#" class="button2">Register</a>
-            </nav> -->
-    <!-- </header> -->
-    <!-- <section class="hero-section">
-              <div class="hero-box">
-                  <div class="left-box">
-                      <p class="ready">Are you ready to learn?</p>
-                      <h1>Let's Learn new <br>ourse and gain <br> more skills</h1>
-                      <p class="left-para">A learning platform based on practical knowledge with <br> best and world class mentors.</p>
-                      <a href="#" class="btn started">Enroll now</a>
-                      <div class="video">
-                        <video src="assets\watch-our-story.mp4" autoplay poster="" style="width: 20px;">
-                        <h2>watch our <br> story</h2>
-                      </div>
-                  </div>
-                  <div class="right-box">
-                      <img src="assets\woman-holding-books2.jpg" alt="header images" style="width: 300px; border-radius: 150px;">
-                  </div>
+    <header class="header">
+      <div class = "logo">
+        <img src = "assets\books.jpg" class="logo-img" alt="logo image" >
+        <h1 class="edulearn"><span>Edu</span>Learn</h1>
+      </div>
+      <nav class = "navigation">
+      <ul class = "navigation--links">
+        <li class="navigation--link-item"><a hef= "#" class = "navigation--link navigation--link-active">Home</a></li>
+        <li class="navigation--link-item"><a hef= "#" class = "navigation--link">Course</a></li>
+        <li class="navigation--link-item"><a hef= "#" class = "navigation--link">Mentor</a></li>
+        <li class="navigation--link-item"><a hef= "#" class = "navigation--link">Pricing</a></li>
+        <li class="navigation--link-item"><a hef= "#" class = "navigation--link">Blog</a></li>
+      </ul>
+    </nav>  
+    <div class="register">
+      <a href="#" class="button btn--register">Register</a>
+    </div>
+    <button class="btn-mobile-nav"><ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+      <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon></button>
+    </header>
+      <section class="hero-section">
+        <div class="hero-box1">
+          <div class="col left-box">
+            <h1 class="learn">Let's Learn new Courses & Gain more skills</h1>
+            <p class="left-para">A learning platform based on practical knowledge with <br> best and world class mentors.</p>
+            <div class="video">
+              <a href="#" class="button btn--enroll">Enroll now</a>
+              <img class="video-img"src="assets\my-passport-photo.png" alt="image 1">
+              <img class="play-button" src="assets\play-button.png" alt="image 2">
+              <p class="watch-para">watch our <br> story</p>
+            </div>
+          </div>
+          <div class="col right-box">
+            <img src="assets/Ellipse.png" class="background" alt="">
+            <img  src="assets\Untitled.png" class="header-img" alt="header images">
+            <img src="assets/Group 5.png" alt="" class="green-book">
+            <img src="assets/teaching.png" alt="" class="teaching">
+            <div class="square">
+              <div class="teacher">
+                <img src="assets/mentor.png">
               </div>
-          </section>
-          <section class="feature">
-              <div class="boxes">
-                  <h2>Trusted By Top 100+ <br> companies & Universities</h2>
-              </div>
-              <div class="boxes">
-                  <img src="assets\Udemy_logo.svg.png" alt="book image" style ="width: 60px">
-              </div>
-              <div class="boxes">
-                  <img src="assets\havard-university.png" alt="book image" style ="width: 60px">
-              </div>
-              <div class="boxes">
-                  <img src="assets\havard-university.png" alt="book image" style ="width: 60px">
-              </div>
-              <div class="boxes">
-                  <img src="assets\slack.jpg" alt="book image" style ="width: 60px">
-              </div>
-              <div class="boxes">
-                  <img src="assets\skillshare.png" alt="book image" style ="width: 60px">
-              </div>
-          </section>
-          <section class="online-courses">
-            <div class="online-box">
-              <div class="inside-box2">
-                <img src="assets/man-pointing.jpg" alt="" class="man-folding" style="width: 200px; height: 250px";>
-                <img src="assets/man-folding arms.jpg" alt="" class="man-folding" style="width: 200px; height: 200px";>
+              <div class="hundred">
+                <h1>100+</h1>
+                <p>Expert Mentors</p>
               </div>
             </div>
-            <div class="online-box">
-                <h2>Why We Are The <br> Best E-learning <br> Platform</h2>
-                <p>As we have 100% success rate we <br> can proudly say we are the best.</p>
-            </div>
-            <div class="online-box ">
-              <div class="online-box2">
-                <div class="inside-box2">
-                    <img src="assets/books.jpg" alt=""  style="width: 50px; height: 70px;">
-                    <div class="">
-                      <h2>Best Cirriculum</h2>
-                      <p>We have the best curriculum as we focus more on <br> practical knowledge</p>
-                    </div>
-                </div>
-                <div class="inside-box2">
-                    <img src="assets/mentor.png" alt=""  style="width: 50px; height: 70px;">
-                    <div class="">
-                      <h2>Best Mentors</h2>
-                      <p>We have the worlds class mentors around the globe <br>they are highly experienced and skilled.</p>
-                    </div>
-                </div>
-                <div class="inside-box2">
-                    <img src="assets/support.png" alt=""  style="width: 50px; height: 80px;">
-                    <div class="">
-                      <h2>24/7 Support</h2>
-                      <p>If you face any problem withour course you will get 24/7 <br> support from our mentors, support mentors.</p>
-                    </div>
-                </div>
+            <div class="square2">
+              <div class="teacher2">
+                <img class="" src="assets/online-course.png">
+              </div>
+              <div class="hundred">
+                <h1>1k+</h1>
+                <p>Courses</p>
               </div>
             </div>
-        </section>
-      </div>-->
-    <!-- </header> -->
-    <!-- <div class="container2">
-            <div class="online-box contact">
-              <div class="inside-box2">
-                <img src="assets\my-passport-photo.jpg" alt="" style="width: 50px; height: 70px;">
-                <div class ="">
-                  <h2>Gertrude</h2>
-                  <p>Ui Ux Designer</p>
-                </div>
-              <div class="">
-                <a href="#" class="btn hire">Hire Me</a>
-              </div>
+            <div class="circle"></div>
+            <div class="circle2">
+            </div>
+            <div class="square3">
+            </div>
+            <div class="triangle">
+            </div>
+            </div>
         </div>
-        <div class="item2">
-          <p>Have an owesome project?</p>
-          <p>just Email me - gertrudenakiryowa1996@gmail.com</p><br>
-          <p>Follow me on Dribble</p>
-          <a href="#">https://dribble.com/gertrude</a><br><br>
-          <p>Follow me on instagram</p>
-          <a href="#">https://instagram.com/nakiryowa-gertrude</a>
+      </section>
+
+      <section class="imagesites--section">
+        <div class="container trusties">
+          <h2 class="Trusted">Trusted By Top 100+ companies & Universities</h2>
+          <div class="logos">
+            <p class="google imagesites"><span class="g">G</span><span class="o">o</span><span class="oo">o</span><span class="g">g</span><span class="l">l</span><span class="o">e</span></p>
+          <img class="imagesites" src="assets\udemy.png">
+          <img class="imagesites" src="assets\slack.png">
+          <img  src="assets\havard-university.png" class="imagesites" alt="book image">
+          <img  src="assets\skillshare.png" class="imagesites">  
+          </div>
         </div>
-      </div> -->
+      </section>
+      <section class="learning-platform">
+        <div class="container grid grid--3-cols">
+          <div class="inside-box1">
+            <div class="men">
+                <img src="assets/Mask Group.png" alt="" class="man-pointing">
+                <div class="comment">
+                  <div class="pointer">
+                  </div>
+                  <div class="inside-comment">
+                    <h3>Joseph Ukara</h3>
+                    <p>Soo Expert & Mentor</p>
+                    <div class="stars">⭐⭐⭐⭐⭐
+                    </div>
+                    <div class="star">⭐⭐⭐</div>
+                  </div>
+                </div>
+            </div>
+            <div class="man-folding">
+              <img src="assets/man-folding-arms.png" alt="" class="">
+            </div>
+          </div>
+          <div class="platform">
+              <h2>Why We Are The Best E-learning Platform</h2>
+              <p>As we have 100% success rate we can proudly say we are the best.</p>
+          </div>
+          <div class="online-box">
+            <div class="inside-box2">
+              <div class="open">
+                <img class="" src="assets/open.png" alt="">
+              </div>
+                <div class="cirriculum">
+                  <h2>Best Cirriculum</h2>
+                  <p>We have the best curriculum as we focus more on <br> practical knowledge</p>
+                </div>
+            </div>
+            <div class="inside-box2">
+              <div class="open2">
+                <img class="" src="assets/open2.png" alt="">
+              </div>
+              <div class="cirriculum">
+                <h2>Best Mentors</h2>
+                <p>We have the worlds class mentors around the globe <br>they are highly experienced and skilled.</p>
+              </div>
+            </div>
+            <div class="inside-box2">
+              <div class="open3">
+                <img class="" src="assets/open3.png" alt="">
+              </div>
+                <div class="cirriculum">
+                  <h2>24/7 Support</h2>
+                  <p>If you face any problem withour course you will get 24/7 <br> support from our mentors, support mentors.</p>
+                </div>
+            </div>
+          </div>
+
+        </div>
+      </section> 
+
   </body>
 </html>
